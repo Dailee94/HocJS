@@ -1,0 +1,25 @@
+// cach 1:
+function soFibolaxi(n) {
+    if (n <= 1) {
+        return n
+    }
+    let a = 0, b = 1, c;
+    for (let i = 2; i <= n; i++){
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
+}
+let n = Number(prompt('moi nhap: '));
+console.log(soFibolaxi(n));
+//cach 2:
+function f(a) {
+    if (a <= 2) {
+        return 1;
+    } else {
+        return f(a - 1) + f(a - 2);
+    }
+}
+let ketQua = f(10);
+console.log(ketQua);
