@@ -1,0 +1,15 @@
+let a = Number(prompt(''));
+while (!Number.isInteger(a)) {
+    a = Number(prompt('nhập sai a mời nhập lại: '));
+}
+console.log(a);
+
+
+let sum = 0;
+for (let i = 1; i <= a; i += 2){
+    sum += i;
+    if (i === 3) {
+        break;
+    }
+}
+alert()
