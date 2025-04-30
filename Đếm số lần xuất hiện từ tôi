@@ -1,0 +1,9 @@
+const a = "tôi học giỏi tôi chăm chỉ tôi đẹp trai";
+const targetWord = 'tôi';
+let dem = 0;
+for (let i = 0; i < a.length; i++){
+    if (a.slice(i, i + targetWord.length) === targetWord) {
+        dem++
+    }
+}
+console.log(dem);
