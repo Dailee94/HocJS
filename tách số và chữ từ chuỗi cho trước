@@ -1,0 +1,18 @@
+function separate(inputString) {
+    let so = "";
+    let chu = "";
+
+    for (let i = 0; i < inputString.length; i++){
+        let char = inputString[i];
+        if (isNaN(char)) {
+            chu += char;
+        } else {
+            so += char;
+        }
+    }
+    return {chu , so}
+}
+
+let inputString = prompt("mời nhập chuỗi cần tách: ");
+let result = separate(inputString);
+console.log(result);
